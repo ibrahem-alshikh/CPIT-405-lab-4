@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>CPIT-405 lab 4</title>
+
+        <h2><a href="https://cpit405.gitlab.io/labs/lab-4/">Lab 4: HTML</a></h2>
+
+        <style>
+        div{
+            padding: 2px;
+        }
+        label{
+            font-size: 18px;
+        }
+        input{
+            margin-top: 12px;
+            font-size: 15px;
+            width: 430px;
+            height: 25px;
+        }
+        textarea{
+            font-size: 15px;
+        }
+
+        #submit {
+            color: white;
+            background-color: black;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        </style>
+
+    </head>
+    <body>
+    <form onsubmit="alert('Form submitted successfully! '); return true;">
+        <h2>Great Auto Parts - Order Form</h2>
+        <div siz>
+            <label for="first-name" >First Name:</label>
+            <br>
+            <input type="text" id="first-name" placeholder="Enter your first name" required>
+        </div>
+
+        <div>
+            <label for="last_name" >Last Name:</label>
+            <br>
+            <input type="text" id="last_name" placeholder="Enter your Last Name" required>
+        </div>
+
+        <div>
+            <label for="email" >Email:</label>
+            <br>
+            <input type="email" id="email" placeholder="Enter your Email" required>
+        </div>
+
+        <div>
+            <label for="phone_number" >Phone number:</label>
+            <br>
+            <input type="number" id="phone_number" style="width: 430px;" placeholder="Enter your Phone Number" required>
+        </div>
+
+        <div>
+            <label for="make" >Make:</label>
+            <br>
+            <input type="text" id="make" placeholder="Make" required>
+        </div>
+
+        <div>
+            <label for="model" >Model:</label>
+            <br>
+            <input type="text" id="model" placeholder="model" required>
+        </div>
+
+        <div>
+            <label for="year" >Year:</label>
+            <br>
+            <input type="number" id="year" style="width: 430px;" placeholder="Year" required>
+        </div>
+
+        <div>
+            <label for="date" >Date:</label>
+            <br>
+            <input type="date" id="date" style="width: 430px;" placeholder="Date" required>
+        </div>
+
+        <div>
+            <label for="spare_part" >Spare Part:</label>
+            <br>
+            <input type="text" id="spare_part" placeholder="Enter the spare part you need" required>
+        </div>
+
+        <div>
+            <label for="quantity" >Quantity:</label>
+            <br>
+            <input type="number" id="quantity" style="width: 430px;" placeholder="Enter the quantity of the spare part you need" required>
+        </div>
+
+        <div>
+            <label for="comment" >Comment:</label>
+            <br>
+            <textarea type="text" id="comment" rows="4" cols="50" placeholder="Enter your Comment" required></textarea>
+        </div>
+
+        <div>
+            <input type="submit" id="submit" style="width: 435px;height: 35px"  >
+        </div>
+</form>
+    </body>
+</html>
